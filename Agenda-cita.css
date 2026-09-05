@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #F1F4EF;
+    color: #22281F;
+}
+
+/* ===== Nav ===== */
+nav {
+    background: #1F3D34;
+    padding: 18px 20px;
+}
+
+nav h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px 48px;
+}
+
+section {
+    width: 100%;
+    max-width: 480px;
+}
+
+/*Formulario */
+#form-pedido {
+    background: #FFFFFF;
+    border: 1px solid #D8DED3;
+    border-radius: 10px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#form-pedido label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin: 14px 0 6px;
+}
+
+input[id="nombre,correo,nombre-mascota,tipo-mascota,tipo-consulta,fecha-cita,hora-cita,mensaje"],
+select,
+textarea,
+input {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+    border: 1px solid #D8DED3;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #22281F;
+    width: 100%;
+}
+
+
+
+/*  Botón  */
+.Boton-enviar {
+    margin-top: 20px;
+    padding: 13px 20px;
+    background: #E8A33D;
+    color: #1F3D34;
+    font-size: 0.98rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.Boton-enviar:hover {
+    background: #C6842A;
+}
+
+#mensaje-confirmacion {
+    margin: 12px 0 0;
+    font-size: 0.88rem;
+    text-align: center;
+    color: #3D6355;
+    min-height: 1.2em;
+}
+
+/* Tableta */
+@media (min-width: 768px) {
+    main {
+        padding: 48px 24px;
+    }
+
+    #form-pedido {
+        padding: 32px 36px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1280px) {
+    section {
+        max-width: 560px;
+    }
+}

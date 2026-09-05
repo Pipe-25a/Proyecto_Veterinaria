@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+
+    <link rel="stylesheet" href="registro.css">
+
+    <script src="registro-funciones.js" defer></script>
+
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Registrate</h1>
+            <form class="form-registro" id="form-registro">
+
+                <label for="reg-nombre">Nombre</label>
+                <input type="text" id="reg-nombre" placeholder="Nombre Completo" required>
+
+                <label for="reg-correo">Correo</label>
+                <input type="email" id="reg-correo" placeholder="Correo Electronico" required>
+
+                <label for="reg-contraseña">Contraseña</label>
+                <input type="password" id="reg-contraseña" placeholder="Mínimo 6 caracteres" required>
+
+                <label for="reg-contraseña-confirmar">Confirmar contraseña</label>
+                <input type="password" id="reg-contraseña-confirmar" placeholder="Repita la constraseña" required>
+
+                <button type="submit" class="boton-enviar">Crear cuenta</button>
+                <p id="mensaje-registro"></p>
+
+                <p class="reg-login">¿Ya tienes cuenta?
+                    <a href="login.html" class="enlace-login">Iniciar secion</a>
+                </p>
+            </form>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

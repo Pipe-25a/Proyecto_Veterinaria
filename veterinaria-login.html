@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - Inicio de Sesión</title>
+    <link rel="stylesheet" href="veterinaria-login.css">
+    <script src="veterinaria-login.js" defer></script>
+</head>
+
+<body>
+    <main class="contenedor-login">
+        <section class="caja-login" aria-labelledby="titulo-login">
+            <h1 id="titulo-login">Acceso Veterinaria</h1>
+            <p class="subtitulo-login">Ingresa tus credenciales de veterinario</p>
+            <form id="form-login-vet" novalidate>
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" placeholder="12.345.678-9" autocomplete="username">
+                <small class="pista" id="pista-rut">Ingresa tu RUT con puntos y guión.</small>
+
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" placeholder="Contraseña" autocomplete="current-password">
+                <small class="pista" id="pista-clave">Mínimo 4 caracteres.</small>
+
+                <button class="boton-ingresar" type="submit">Ingresar al Panel</button>
+                <p class="mensaje-login" id="mensaje-login" role="alert"></p>
+
+                <p class="enlace-volver">
+                    <a href="index.html">&larr; Volver a la página principal</a>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

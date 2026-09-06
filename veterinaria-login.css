@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #F1F4EF;
+    color: #1d2422;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 16px;
+    min-height: 100vh;
+}
+
+.caja-login {
+    width: 100%;
+    max-width: 400px;
+    background: #FFFFFF;
+    border: 1px solid #D8DED3;
+    border-radius: 10px;
+    padding: 28px 24px;
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: 1.3rem;
+    color: #1d2422;
+    text-align: center;
+}
+
+.subtitulo-login {
+    margin: 0 0 8px;
+    font-size: 0.88rem;
+    color: #5B6459;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1d2422;
+    margin: 14px 0 6px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+    border: 1px solid #D8DED3;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #1d2422;
+    width: 100%;
+}
+
+input.campo-error {
+    border-color: #B3432B;
+    background: #FBEEEA;
+}
+
+.pista {
+    font-size: 0.78rem;
+    color: #8A9189;
+    margin-top: 4px;
+}
+
+.pista.pista-error {
+    color: #B3432B;
+    font-weight: 600;
+}
+
+.boton-ingresar {
+    margin-top: 20px;
+    padding: 13px 20px;
+    background: #E8A33D;
+    color: #1F3D34;
+    font-size: 0.98rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.boton-ingresar:hover {
+    background: #C6842A;
+}
+
+.mensaje-login {
+    margin: 12px 0 0;
+    font-size: 0.88rem;
+    text-align: center;
+    min-height: 1.2em;
+    color: #1d2422;
+}
+
+.mensaje-login.mensaje-exito {
+    color: #3D6355;
+}
+
+.mensaje-login.mensaje-error {
+    color: #B3432B;
+}
+
+.enlace-volver {
+    margin: 16px 0 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.enlace-volver a {
+    color: #1d2422;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding: 48px 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .caja-login {
+        max-width: 440px;
+    }
+}

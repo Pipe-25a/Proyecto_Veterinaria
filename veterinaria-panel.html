@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Veterinaria</title>
+    <link rel="stylesheet" href="veterinaria-panel.css">
+    <script src="veterinaria-panel.js" defer></script>
+</head>
+
+<body class="layout-panel">
+    <aside class="barra-lateral" aria-label="Menú principal de veterinaria">
+        <header class="cabecera-lateral">
+            <img class="logo" src="Imagen_icon.jpg" alt="Logo de la Clínica Veterinaria">
+            <h1>Veterinaria</h1>
+        </header>
+        <nav class="menu-lateral" aria-label="Navegación del módulo">
+            <ul>
+                <li><a class="activo" href="veterinaria-panel.html">Inicio</a></li>
+                <li><a href="veterinaria-citas.html">Citas</a></li>
+                <li><a href="veterinaria-historial.html">Historial</a></li>
+                <li><a href="veterinaria-fichas.html">Fichas</a></li>
+                <li><a href="veterinaria-reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+        <footer class="pie-lateral">
+            <span id="usuario-nombre">Veterinario</span>
+            <button id="btn-cerrar" class="btn-cerrar">Cerrar sesión</button>
+        </footer>
+    </aside>
+
+    <main class="contenido">
+        <header class="cabecera-contenido">
+            <h2>Bienvenido al sistema de gestión veterinaria</h2>
+            <p>Selecciona un módulo para comenzar a trabajar.</p>
+        </header>
+
+        <section class="grilla-modulos" aria-label="Módulos disponibles">
+            <article class="tarjeta">
+                <a href="veterinaria-citas.html">
+                    <h3>Citas</h3>
+                    <p>Agendar, ver, confirmar y registrar citas médicas.</p>
+                </a>
+            </article>
+
+            <article class="tarjeta">
+                <a href="veterinaria-historial.html">
+                    <h3>Historial Clínico</h3>
+                    <p>Consulta el historial completo de atenciones de cada mascota.</p>
+                </a>
+            </article>
+
+            <article class="tarjeta">
+                <a href="veterinaria-fichas.html">
+                    <h3>Gestión de Fichas</h3>
+                    <p>Crear, editar y administrar las fichas clínicas de los pacientes.</p>
+                </a>
+            </article>
+
+            <article class="tarjeta">
+                <a href="veterinaria-reportes.html">
+                    <h3>Reportes</h3>
+                    <p>Estadísticas de atenciones, especies atendidas e ingresos.</p>
+                </a>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Clínico - Veterinaria</title>
+    <link rel="stylesheet" href="veterinaria-historial.css">
+    <script src="veterinaria-datos.js" defer></script>
+    <script src="veterinaria-historial.js" defer></script>
+</head>
+
+<body>
+    <aside class="barra-lateral" aria-label="Menú principal de veterinaria">
+        <header class="cabecera-lateral">
+            <img class="logo" src="Imagen_icon.jpg" alt="Logo de la Clínica Veterinaria">
+            <h1>Veterinaria</h1>
+        </header>
+        <nav class="menu-lateral" aria-label="Navegación del módulo">
+<ul>
+                <li><a href="veterinaria-panel.html">Inicio</a></li>
+                <li><a href="veterinaria-citas.html">Citas</a></li>
+                <li><a class="activo" href="veterinaria-historial.html">Historial</a></li>
+                <li><a href="veterinaria-fichas.html">Fichas</a></li>
+                <li><a href="veterinaria-reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+        <footer class="pie-lateral">
+            <span id="usuario-nombre">Veterinario</span>
+            <button id="btn-cerrar" class="btn-cerrar">Cerrar sesión</button>
+        </footer>
+    </aside>
+
+    <main class="contenido">
+        <header class="cabecera-contenido">
+            <h2>Historial Clínico</h2>
+            <p>Consulta las atenciones registradas de cada paciente.</p>
+        </header>
+
+        <section class="busqueda" aria-label="Búsqueda de paciente">
+            <h3>Buscar paciente</h3>
+            <label class="filtro" for="buscador">Filtrar por mascota o dueño</label>
+            <input type="text" id="buscador" placeholder="Buscar por mascota o dueño...">
+        </section>
+
+        <section class="registro-manual" aria-labelledby="titulo-registro">
+            <h3 id="titulo-registro">Registrar atención manual</h3>
+            <form id="form-historial" novalidate>
+                <label for="h-mascota">Mascota</label>
+                <input type="text" id="h-mascota" placeholder="Nombre de la mascota" autocomplete="off">
+                <small class="pista" id="pista-mascota"></small>
+
+                <label for="h-especie">Especie</label>
+                <select id="h-especie">
+                    <option value="">Selecciona</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Hamster</option>
+                    <option>Tortuga</option>
+                    <option>Pájaro</option>
+                    <option>Otro</option>
+                </select>
+                <small class="pista" id="pista-especie"></small>
+
+                <label for="h-dueno">Dueño</label>
+                <input type="text" id="h-dueno" placeholder="Nombre del dueño" autocomplete="name">
+                <small class="pista" id="pista-dueno"></small>
+
+                <label for="h-tipo">Tipo de atención</label>
+                <select id="h-tipo">
+                    <option value="">Selecciona</option>
+                    <option>Consulta</option>
+                    <option>Vacunación</option>
+                    <option>Desparasitación</option>
+                    <option>Cirugía</option>
+                    <option>Urgencia</option>
+                </select>
+                <small class="pista" id="pista-tipo"></small>
+
+                <label for="h-fecha">Fecha</label>
+                <input type="date" id="h-fecha">
+                <small class="pista" id="pista-fecha"></small>
+
+                <label for="h-diagnostico">Diagnóstico</label>
+                <input type="text" id="h-diagnostico" placeholder="Diagnóstico principal">
+
+                <label for="h-tratamiento">Tratamiento</label>
+                <textarea id="h-tratamiento" rows="2" placeholder="Tratamiento indicado"></textarea>
+
+                <button class="boton" type="submit">Guardar en historial</button>
+                <p class="mensaje" id="mensaje-historial" role="alert"></p>
+            </form>
+        </section>
+
+        <section class="lista-historial" aria-labelledby="titulo-lista">
+            <h3 id="titulo-lista">Historial de atenciones</h3>
+            <table>
+                <caption class="accesible">Historial de atenciones registradas</caption>
+                <thead>
+                    <tr>
+                        <th>Mascota</th>
+                        <th>Especie</th>
+                        <th>Dueño</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Veterinario</th>
+                        <th>Diagnóstico</th>
+                        <th>Tratamiento</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-historial"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

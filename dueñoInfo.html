@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion y contacto</title>
+    <link rel="stylesheet" href="dueñoInfo.css">
+</head>
+<body>
+    <main>
+        <section class="Logo">
+            <img src="Imagen_icon.jpg" alt="logo" class="logo">
+        </section>
+        <section class="Titulo">
+            <h1>Informacion y Contacto</h1>
+        </section>
+        <section class="Navegacion">
+            <p>Elije una opcion</p>
+            <nav>
+                <ul>
+                    <li><a href="dueñoHome.html">Inicio</a></li>
+                    <li><a href="Agendar-cita.html">Agendar Citas</a></li>
+                    <li><a href="dueñoCatalogo.html">Revisar catalogo</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="Informacion">
+            <h4>Informacion</h4>
+            <p>Clinica Veterinaria</p>
+            <p>Desde 20020 atendemos a las familias y sus mascotas en San Bernador, con un equipo de médicos veterinarios dedicados a tu mascota.</p>
+        </section>
+            <section class="Contacto">
+                <h5>Envíe un formulario</h5>
+                    <form class="FormularioContacto" action="#" method="post">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre"required minlength="3" maxlength="60">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo" required>
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="cita">Consulta sobre una cita</option>
+                    <option value="catalogo">Consulta sobre servicios</option>
+                    <option value="reclamo">Reclamo o sugerencia</option>
+                    <option value="otro">Otro</option>
+                    </select>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="500"></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Clinica Veterinaria. Todos los derechos reservados.</p>
+        <p>Contaco : + 56 12345 6789</p>
+        <p>Gmail: clinicaVeterinaria@.cl</p>
+    </footer>
+</body>
+</html>

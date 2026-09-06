@@ -1,0 +1,73 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 20px auto 10px auto;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 10px;
+}
+.titulo{
+    text-align: center;
+    color: #1d2422;
+    margin: 0 auto 20px auto;
+    max-width: 700px;
+}
+.Navegacion{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Navegacion nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.Navegacion nav ul li a{
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+}
+.Catalo_servicios_medicamentos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 5% 30px 5%;
+}
+.tablaServicios,
+.tablaMedicamentos{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+}
+.tablaServicios h2,
+.tablaMedicamentos h2{
+    text-align: center;
+    color: #1d2422;
+    margin-top: 0;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    
+}
+th,td{
+    border: 1px solid #000000;
+    padding: 8px 10px;
+    text-align: left;
+}
+thead{
+    background-color: #e7e7e7;
+}

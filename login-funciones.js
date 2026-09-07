@@ -91,7 +91,7 @@ formLogin.addEventListener('submit', function (e) {
     // Cada rol tiene su propia página. Ajusta estos nombres de archivo
     // cuando existan las páginas reales de cada módulo.
     const destinoPorRol = {
-        administrador: 'panel-admin.html',
+        administrador: 'adminHome.html',
         veterinario: 'veterinaria-panel.html',
         dueno: 'dueñoHome.html'
     };

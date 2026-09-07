@@ -16,7 +16,7 @@ function inicializarUsuarios() {
         { nombre: 'Admin San Marcos', correo: 'admin@sanmarcos.cl', password: 'admin123', rol: 'administrador' },
         { nombre: 'Recepción San Marcos', correo: 'recepcion@sanmarcos.cl', password: 'recepcion123', rol: 'recepcionista' },
         { nombre: 'Dra. Carolina Soto', correo: 'vet@sanmarcos.cl', password: 'vet123', rol: 'veterinario' },
-        { nombre: 'Oliver Atom', correo: 'usuario@gmail.cl', password: 'usuario123', rol: 'cliente' }
+        { nombre: 'Oliver Atom', correo: 'usuario@gmail.cl', password: 'usuario123', rol: 'dueno' }
     ];
  
     localStorage.setItem(claveUsuarios, JSON.stringify(usuariosDePrueba));
@@ -95,7 +95,7 @@ formLogin.addEventListener('submit', function (e) {
         administrador: 'panel-admin.html',
         recepcionista: 'Citas-recepcion.html',
         veterinario: 'veterinaria-panel.html',
-        cliente: 'Agendar-cita.html'
+        dueno: 'Agendar-cita.html'
     };
 
     setTimeout(function () {

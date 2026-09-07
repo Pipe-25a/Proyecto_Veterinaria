@@ -14,7 +14,6 @@ function inicializarUsuarios() {
  
     const usuariosDePrueba = [
         { nombre: 'Admin San Marcos', correo: 'admin@sanmarcos.cl', password: 'admin123', rol: 'administrador' },
-        { nombre: 'Recepción San Marcos', correo: 'recepcion@sanmarcos.cl', password: 'recepcion123', rol: 'recepcionista' },
         { nombre: 'Dra. Carolina Soto', correo: 'vet@sanmarcos.cl', password: 'vet123', rol: 'veterinario' },
         { nombre: 'Oliver Atom', correo: 'usuario@gmail.cl', password: 'usuario123', rol: 'dueno' }
     ];
@@ -93,13 +92,12 @@ formLogin.addEventListener('submit', function (e) {
     // cuando existan las páginas reales de cada módulo.
     const destinoPorRol = {
         administrador: 'panel-admin.html',
-        recepcionista: 'Citas-recepcion.html',
         veterinario: 'veterinaria-panel.html',
-        dueno: 'Agendar-cita.html'
+        dueno: 'dueñoHome.html'
     };
 
     setTimeout(function () {
-        window.location.href = destinoPorRol[usuarioEncontrado.rol] || 'Agendar-cita.html';
+        window.location.href = destinoPorRol[usuarioEncontrado.rol] || 'dueñoHome.html';
     }, 800);
  
 

@@ -1,5 +1,5 @@
 body{
-    background-color: #F1F4EF;
+    background-color: #E8F5E9;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -17,8 +17,8 @@ body{
     height: auto;
     padding: 10px;
     text-align: center;
-    color: #1d2422; 
-    background-color: #ffe46e;
+    color: #FFFFFF; 
+    background-color: #2E7D32;
     border: 2px solid #1d2422;
     border-radius: 15px;
 }
@@ -29,7 +29,7 @@ body{
     padding: 1%;
     text-align: center;
     color: #1d2422; 
-    background-color: #ffd254;
+    background-color: #66BB6A;
     border: 2px solid #000000;
     border-radius: 15px;
 }
@@ -38,10 +38,27 @@ body{
     height: auto;
     border: 2px solid #000000;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border-radius:15px;
 
 }
+
+.Seccion_Video {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.video {
+    width: 65%;
+    max-width: 800px;
+    height: auto;
+}
+
+
 nav{
     border: 2px solid #000000;
     margin-left: auto;
@@ -49,7 +66,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e7e7e7;
+    background-color: #FFFFFF;
     border-radius: 5px;
     width: 50%;
     height: auto;
@@ -89,13 +106,14 @@ nav ul li a{
     color: #333;
 }
 .InformacionContacto{
-    background-color: #ffd727;
+    background-color: #2E7D32;
     padding: 10px;
     border: 2px solid #000000;
     border-radius: 10px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    color: #FFFFFF;
 }
 th, td {
     border: 1px solid #000000;

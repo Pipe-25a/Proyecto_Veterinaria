@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #d3edc1;
+    background: #E8F5E9;
     color: #1d2422;
     min-height: 100vh;
 }
@@ -17,7 +17,7 @@ body {
 
 /* ===== Barra lateral ===== */
 .barra-lateral {
-    background: #bcdc08;
+    background: #2E7D32;
     border-right: 2px solid #000000;
     min-height: 100vh;
     display: flex;
@@ -58,14 +58,15 @@ body {
     border-bottom: 1px solid #000000;
     font-size: 0.95rem;
     transition: background 0.15s ease;
+    color: #FFFFFF;
 }
 
 .menu-lateral li a:hover {
-    background: #e7e7e7;
+    background: #1B5E20;
 }
 
 .menu-lateral li a.activo {
-    background: #ffe46e;
+    background: #66BB6A;
     font-weight: 700;
 }
 
@@ -80,7 +81,7 @@ body {
 }
 
 .btn-cerrar {
-    background: #22a2d8;
+    background: #F9A825;
     border: 2px solid #000000;
     color: #1d2422;
     padding: 7px 14px;
@@ -117,8 +118,8 @@ body {
 
 .tarjeta a {
     display: block;
-    background: #bcdc08;
-    border: 2px solid #000000;
+    background: #FFFFFF;
+    border: 2px solid #2E7D32;
     border-radius: 15px;
     padding: 24px 20px;
     text-decoration: none;
@@ -127,7 +128,7 @@ body {
 }
 
 .tarjeta a:hover {
-    background: #ffe46e;
+    background: #66BB6A;
 }
 
 .tarjeta h3 {

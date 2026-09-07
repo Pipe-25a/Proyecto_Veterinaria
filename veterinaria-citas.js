@@ -1,14 +1,14 @@
-const sesion = JSON.parse(localStorage.getItem("vetSesion") || "null");
+const sesion = JSON.parse(localStorage.getItem("mis_sesion") || "null");
 
 if (!sesion) {
-    window.location.href = "veterinaria-login.html";
+    window.location.href = "login.html";
 } else {
     document.getElementById("usuario-nombre").textContent = sesion.nombre;
 }
 
 document.getElementById("btn-cerrar").addEventListener("click", () => {
-    localStorage.removeItem("vetSesion");
-    window.location.href = "veterinaria-login.html";
+    localStorage.removeItem("mis_sesion");
+    window.location.href = "login.html";
 });
 
 const form = document.getElementById("form-cita");

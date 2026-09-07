@@ -1,13 +1,13 @@
 body{
-    background-color: #F1F4EF;
+    background-color: #E8F5E9;
     display: flex;
     align-content: center;
     flex-direction: column;
 
 }
 .opciones_admin{
-    background-color: #ffffff;
-    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #2E7D32;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body{
     margin-right: auto;
 }
 footer{
-    background-color: #ffffff;
+    background-color: #2E7D32;
     border: 2px solid #000000;
     text-align: center;
     padding: 10px;
@@ -35,9 +35,10 @@ footer{
     border-radius: 15px;
     margin-left: 30%;
     margin-right: 30%;
+    color: #FFFFFF;
 }
 .titulo_home_admin{
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: 2px solid #000000;
     text-align: center;
     padding: 10px;
@@ -47,7 +48,7 @@ footer{
     margin-right: 20%;
 }
 .cuerpo_home_admin{
-    background-color: #c6f0ae;
+    background-color: #E8F5E9;
     border: 2px solid #000000;
     text-align: center;
     padding: 10px;

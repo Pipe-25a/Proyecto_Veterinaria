@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #d3edc1;
+    background: #E8F5E9;
     color: #1d2422;
     min-height: 100vh;
     display: grid;
@@ -14,7 +14,7 @@ body {
 
 /* ===== Barra lateral ===== */
 .barra-lateral {
-    background: #bcdc08;
+    background: #2E7D32;
     border-right: 2px solid #000000;
     min-height: 100vh;
     display: flex;
@@ -55,14 +55,15 @@ body {
     border-bottom: 1px solid #020202;
     font-size: 0.95rem;
     transition: background 0.15s ease;
+    color: #FFFFFF;
 }
 
 .menu-lateral li a:hover {
-    background: #e7e7e7;
+    background: #1B5E20;
 }
 
 .menu-lateral li a.activo {
-    background: #ffe46e;
+    background: #66BB6A;
     font-weight: 700;
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .btn-cerrar {
-    background: #22a2d8;
+    background: #F9A825;
     border: 2px solid #000000;
     color: #1d2422;
     padding: 7px 14px;
@@ -111,7 +112,7 @@ body {
 }
 
 .contenido > section {
-    background-color: rgb(198, 231, 12);
+    background-color: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 15px;
     padding: 22px;
@@ -134,7 +135,7 @@ body {
 }
 
 .resumen-item {
-    background: #a6d3fb;
+    background: #66BB6A;
     border: 2px solid #000000;
     border-radius: 15px;
     padding: 18px;
@@ -145,13 +146,13 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    color: #1d2422;
+    color: #FFFFFF;
 }
 
 .resumen-etiqueta {
     display: block;
     font-size: 0.82rem;
-    color: #5B6459;
+    color: #FFFFFF;
     margin-top: 4px;
 }
 
@@ -170,8 +171,9 @@ td {
 }
 
 thead th {
-    background: #08c6e894;
+    background: #2E7D32;
     font-weight: 600;
+    color: #FFFFFF;
 }
 
 tfoot th {
@@ -232,7 +234,7 @@ tbody tr{
 /* ===== Botón exportar ===== */
 .boton-exportar {
     padding: 14px 24px;
-    background: #E8A33D;
+    background: #2E7D32;
     color: #1d2422;
     font-size: 0.98rem;
     font-weight: 700;
@@ -245,7 +247,7 @@ tbody tr{
 }
 
 .boton-exportar:hover {
-    background: #C6842A;
+    background: #1B5E20;
 }
 
 @media print {

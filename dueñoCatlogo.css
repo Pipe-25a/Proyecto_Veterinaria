@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: #E8F5E9;
     font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
@@ -32,10 +32,10 @@ body{
 }
 .Navegacion nav ul li a{
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 8px 15px;
     border-radius: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #2E7D32;
 }
 .Catalo_servicios_medicamentos{
     display: flex;
@@ -69,5 +69,6 @@ th,td{
     text-align: left;
 }
 thead{
-    background-color: #e7e7e7;
+    background-color: #2E7D32;
+    color: #FFFFFF;
 }

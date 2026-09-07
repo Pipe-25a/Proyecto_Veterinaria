@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #F1F4EF;
+    background: #E8F5E9;
     color: #22281F;
 }
 
@@ -69,7 +69,7 @@ input.campo-error {
 .Boton-inicio {
     margin-top: 20px;
     padding: 13px 20px;
-    background: #E8A33D;
+    background: #2E7D32;
     color: #1F3D34;
     font-size: 0.98rem;
     font-weight: 700;
@@ -80,7 +80,7 @@ input.campo-error {
 }
 
 .Boton-inicio:hover {
-    background: #C6842A;
+    background: #1B5E20;
 }
 
 .mensaje-login {
@@ -96,7 +96,7 @@ input.campo-error {
 }
 
 .mensaje-login.mensaje-error {
-    color: #B3432B;
+    color: #C62828;
 }
 
 .enlace-registro {
@@ -110,6 +110,16 @@ a.enlace-registro {
     color: #1F3D34;
     font-weight: 600;
     text-decoration: underline;
+}
+
+.InformacionContacto {
+    background-color: #d8ffbe8e;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Tableta */

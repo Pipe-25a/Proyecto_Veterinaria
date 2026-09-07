@@ -1,5 +1,5 @@
 const VetDatos = (function () {
-    const CLAVE_CITAS = "vetCitas";
+    const CLAVE_CITAS = "mis_citas";
     const CLAVE_FICHAS = "vetFichas";
 
     const CITAS_INICIALES = [

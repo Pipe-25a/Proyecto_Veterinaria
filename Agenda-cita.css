@@ -5,21 +5,52 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: #F1F4EF;
+    background: #E8F5E9;
     color: #22281F;
 }
 
-/* ===== Nav ===== */
-nav {
-    background: #1F3D34;
-    padding: 18px 20px;
+
+.logo {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 1.2rem;
+.Titulo {
     text-align: center;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    width: 350px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Nav ===== */
+
+.navegacion {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #000000;
+    width: 350px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
+}
+
+.navegacion h2 {
+    text-align: center;
+    margin: 0 0 12px 0;
+    font-size: 1.1rem;
+    color: #1F3D34;
 }
 
 
@@ -42,7 +73,7 @@ section {
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
-    
+
 
 }
 
@@ -72,7 +103,7 @@ input {
 .Boton-enviar {
     margin-top: 20px;
     padding: 13px 20px;
-    background: #E8A33D;
+    background: #2E7D32;
     color: #1F3D34;
     font-size: 0.98rem;
     font-weight: 700;
@@ -83,7 +114,15 @@ input {
 }
 
 .Boton-enviar:hover {
-    background: #C6842A;
+    background: #1B5E20;
+}
+
+.mensaje-login.mensaje-exito {
+    color: #3D6355;
+}
+
+.mensaje-agendar.mensaje-error {
+    color: #C62828;
 }
 
 #mensaje-confirmacion {
@@ -92,6 +131,16 @@ input {
     text-align: center;
     color: #3D6355;
     min-height: 1.2em;
+}
+
+.InformacionContacto {
+    background-color: #d8ffbe8e;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Tableta */

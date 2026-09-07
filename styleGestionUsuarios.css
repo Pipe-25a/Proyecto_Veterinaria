@@ -1,5 +1,5 @@
 body{
-    background-color: #F1F4EF;
+    background-color: #E8F5E9;
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -10,8 +10,8 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     border: 1px solid #000000;
     margin-left: auto;
     margin-right: auto;
@@ -21,7 +21,7 @@ body{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     border-radius: 5px;
     border: 2px solid #000000;
     width: 600px;
@@ -32,7 +32,7 @@ body{
 .navegacion{
     display: flex;
     justify-content: center;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     border-radius: 5px;
     border: 2px solid #000000;
     width: 300px;
@@ -44,7 +44,7 @@ body{
 
 }
 .Tabla_usuarios{
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
     width: 700px;
     border-collapse: collapse;
     margin-top: 20px;
@@ -55,6 +55,7 @@ body{
     margin-right: auto;
 }
 th, td {
+    background-color: #2E7D32;
     border: 1px solid #000000;
     padding: 8px;
     text-align: left;
@@ -73,6 +74,7 @@ th, td {
     margin-right: auto;
 }
 button{
+    color: #FFFFFF;
     padding: 10px 20px;
     margin: 0 10px;
 }
@@ -80,11 +82,12 @@ footer{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #f2f2f2;
+    background-color: #2E7D32;
     border-radius: 5px;
     border: 2px solid #000000;
     width: 600px;
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    color: #FFFFFF;
 }

@@ -82,7 +82,7 @@ formRegistro.addEventListener('submit', function (e) {
         nombre: nombre.value.trim(),
         correo: correo.value.trim(),
         password: contrasena.value,
-        rol: 'cliente'
+        rol: 'dueno'
     };
  
     usuarios.push(nuevoUsuario);

@@ -1,3 +1,4 @@
+
 const patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
  
 const claveUsuarios = 'mis_usuarios';
@@ -103,4 +104,3 @@ formLogin.addEventListener('submit', function (e) {
  
 
 });
- 

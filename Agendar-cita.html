@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="Agenda-cita.css">
+
+    <script src="Agenda-cita-funciones.js" defer></script>
+
+</head>
+
+<body>
+    <nav>
+        <h1>Formulario para cita</h1>
+
+    </nav>
+
+    <main>
+        <section >
+
+            <form id="form-pedido">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" placeholder="Correo Electronico" required>
+
+                <label for="nombre-mascota">Nombre de la mascota</label>
+                <input type="text" id="nombre-mascota" placeholder="Nombre Mascota" required>
+
+
+                <label for="tipo-mascota">Mascota</label>
+                <select id="tipo-mascota" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Hamster</option>
+                    <option>Tortuga</option>
+                    <option>Pajaros</option>
+                    <option>Otros</option>
+                </select>
+
+                <label for="tipo-consulta">Consultas</label>
+                <select id="tipo-consulta" required>
+                    <option value="">Selecciona una opción</option>
+                    <option>Vacunacion</option>
+                    <option>Cirugía</option>
+                    <option>Desparasitacion</option>
+                    <option>Consultas</option>
+                </select>
+
+                
+                <label for="fecha-cita">Fecha Deseada</label>
+                <input type="date" id="fecha">
+                
+
+                <label for="hora-cita">Hora Deseada</label>
+                <input type="datetime" id="hora">
+                <p>Si no hay un bloque disponible se le asignara uno lo mas cercano al deseado</p>
+                
+
+                <label for="mensaje">Mensaje (opcional)</label>
+                <textarea id="mensaje" rows="2"></textarea>
+
+                <button class="Boton-enviar" type="submit">Agendar cita</button>
+                <p id="mensaje-confirmacion"></p>
+            </form>
+
+        </section>
+
+    </main>
+</body>
+
+</html>

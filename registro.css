@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #F1F4EF;
+    color: #22281F;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 60px 16px;
+    min-height: 100vh;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 420px;
+    background: #FFFFFF;
+    border: 1px solid #D8DED3;
+    border-radius: 10px;
+    padding: 28px 24px;
+}
+
+.form-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-nombre,.reg-correo, .reg-contraseña, .reg-contraseña-confirmar{
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #22281F;
+    margin: 14px 0 6px;
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 10px 12px;
+    border: 1px solid #D8DED3;
+    border-radius: 8px;
+    background: #FFFFFF;
+    color: #22281F;
+    width: 100%;
+}
+
+
+
+input.campo-error {
+    border-color: #B3432B;
+    background: #FBEEEA;
+}
+
+.boton-enviar {
+    margin-top: 20px;
+    padding: 13px 20px;
+    background: #E8A33D;
+    color: #1F3D34;
+    font-size: 0.98rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.boton-enviar:hover {
+    background: #C6842A;
+}
+
+#mensaje-registro {
+    margin: 12px 0 0;
+    font-size: 0.88rem;
+    text-align: center;
+    min-height: 1.2em;
+    color: #22281F;
+}
+
+#mensaje-registro.mensaje-exito {
+    color: #3D6355;
+}
+
+#mensaje-registro.mensaje-error {
+    color: #B3432B;
+}
+
+.reg-login {
+    margin: 16px 0 0;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #5B6459;
+}
+
+a.enlace-login {
+    color: #1F3D34;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Tableta */
+@media (min-width: 768px) {
+    main {
+        padding: 48px 24px;
+    }
+
+    #form-pedido {
+        padding: 32px 36px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1280px) {
+    section {
+        max-width: 560px;
+    }
+}

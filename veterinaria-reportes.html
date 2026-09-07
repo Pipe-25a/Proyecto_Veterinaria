@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Veterinaria</title>
+    <link rel="stylesheet" href="veterinaria-reportes.css">
+    <script src="veterinaria-datos.js" defer></script>
+    <script src="veterinaria-reportes.js" defer></script>
+</head>
+
+<body>
+    <aside class="barra-lateral" aria-label="Menú principal de veterinaria">
+        <header class="cabecera-lateral">
+            <img class="logo" src="Imagen_icon.jpg" alt="Logo de la Clínica Veterinaria">
+            <h1>Veterinaria</h1>
+        </header>
+        <nav class="menu-lateral" aria-label="Navegación del módulo">
+<ul>
+                <li><a href="veterinaria-panel.html">Inicio</a></li>
+                <li><a href="veterinaria-citas.html">Citas</a></li>
+                <li><a href="veterinaria-historial.html">Historial</a></li>
+                <li><a href="veterinaria-fichas.html">Fichas</a></li>
+                <li><a class="activo" href="veterinaria-reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+        <footer class="pie-lateral">
+            <span id="usuario-nombre">Veterinario</span>
+            <button id="btn-cerrar" class="btn-cerrar">Cerrar sesión</button>
+        </footer>
+    </aside>
+
+    <main class="contenido">
+        <header class="cabecera-contenido">
+            <h2>Reportes</h2>
+            <p>Estadísticas de atención, especies e ingresos del consultorio.</p>
+        </header>
+
+        <section class="resumen" aria-label="Resumen general">
+            <h3>Resumen general</h3>
+            <ul class="tarjetas-resumen">
+                <li class="resumen-item">
+                    <span class="resumen-valor" id="total-citas">0</span>
+                    <span class="resumen-etiqueta">Citas totales</span>
+                </li>
+                <li class="resumen-item">
+                    <span class="resumen-valor" id="total-atendidas">0</span>
+                    <span class="resumen-etiqueta">Atenciones realizadas</span>
+                </li>
+                <li class="resumen-item">
+                    <span class="resumen-valor" id="total-fichas">0</span>
+                    <span class="resumen-etiqueta">Fichas clínicas</span>
+                </li>
+                <li class="resumen-item">
+                    <span class="resumen-valor" id="total-especies">0</span>
+                    <span class="resumen-etiqueta">Especies distintas</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="reporte" aria-labelledby="titulo-tipos">
+            <h3 id="titulo-tipos">Atenciones por tipo</h3>
+            <table>
+                <caption class="accesible">Cantidad de atenciones e ingreso estimado por tipo</caption>
+                <thead>
+                    <tr>
+                        <th>Tipo de atención</th>
+                        <th>Cantidad</th>
+                        <th>Ingreso estimado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-tipos"></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th id="total-cantidad">0</th>
+                        <th id="total-ingresos">$0</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section class="reporte" aria-labelledby="titulo-especies">
+            <h3 id="titulo-especies">Especies atendidas</h3>
+            <table>
+                <caption class="accesible">Cantidad de atenciones por especie</caption>
+                <thead>
+                    <tr>
+                        <th>Especie</th>
+                        <th>Cantidad de atenciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-especies"></tbody>
+            </table>
+        </section>
+
+        <section class="reporte" aria-labelledby="titulo-proximas">
+            <h3 id="titulo-proximas">Próximas citas</h3>
+            <table>
+                <caption class="accesible">Próximas citas programadas</caption>
+                <thead>
+                    <tr>
+                        <th>Mascota</th>
+                        <th>Dueño</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-proximas"></tbody>
+            </table>
+        </section>
+
+        <button class="boton-exportar" id="btn-exportar">Exportar reporte a impresión</button>
+    </main>
+</body>
+
+</html>

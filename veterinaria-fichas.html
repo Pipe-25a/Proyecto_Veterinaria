@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Fichas - Veterinaria</title>
+    <link rel="stylesheet" href="veterinaria-fichas.css">
+    <script src="veterinaria-datos.js" defer></script>
+    <script src="veterinaria-fichas.js" defer></script>
+</head>
+
+<body>
+    <aside class="barra-lateral" aria-label="Menú principal de veterinaria">
+        <header class="cabecera-lateral">
+            <img class="logo" src="Imagen_icon.jpg" alt="Logo de la Clínica Veterinaria">
+            <h1>Veterinaria</h1>
+        </header>
+        <nav class="menu-lateral" aria-label="Navegación del módulo">
+            <ul>
+                <li><a href="veterinaria-panel.html">Inicio</a></li>
+                <li><a href="veterinaria-citas.html">Citas</a></li>
+                <li><a href="veterinaria-historial.html">Historial</a></li>
+                <li><a class="activo" href="veterinaria-fichas.html">Fichas</a></li>
+                <li><a href="veterinaria-reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+        <footer class="pie-lateral">
+            <span id="usuario-nombre">Veterinario</span>
+            <button id="btn-cerrar" class="btn-cerrar">Cerrar sesión</button>
+        </footer>
+    </aside>
+
+    <main class="contenido">
+        <header class="cabecera-contenido">
+            <h2>Gestión de Fichas Clínicas</h2>
+            <p>Crea, edita y administra las fichas de tus pacientes.</p>
+        </header>
+
+        <section class="formulario-ficha" aria-labelledby="titulo-formulario">
+            <h3 id="titulo-formulario">Nueva ficha clínica</h3>
+            <form id="form-ficha" novalidate>
+                <input type="hidden" id="f-id">
+
+                <label for="f-mascota">Nombre de la mascota</label>
+                <input type="text" id="f-mascota" placeholder="Nombre de la mascota" autocomplete="off">
+                <small class="pista" id="pista-mascota"></small>
+
+                <label for="f-dueno">Nombre del dueño</label>
+                <input type="text" id="f-dueno" placeholder="Nombre del dueño" autocomplete="name">
+                <small class="pista" id="pista-dueno"></small>
+
+                <label for="f-especie">Especie</label>
+                <select id="f-especie">
+                    <option value="">Selecciona</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Hamster</option>
+                    <option>Tortuga</option>
+                    <option>Pájaro</option>
+                    <option>Otro</option>
+                </select>
+                <small class="pista" id="pista-especie"></small>
+
+                <label for="f-raza">Raza</label>
+                <input type="text" id="f-raza" placeholder="Raza (opcional)" autocomplete="off">
+
+                <label for="f-edad">Edad (años)</label>
+                <input type="number" id="f-edad" min="0" step="0.1" placeholder="Edad">
+                <small class="pista" id="pista-edad"></small>
+
+                <label for="f-peso">Peso (kg)</label>
+                <input type="number" id="f-peso" min="0" step="0.1" placeholder="Peso">
+                <small class="pista" id="pista-peso"></small>
+
+                <label for="f-condicion">Condición de salud</label>
+                <select id="f-condicion">
+                    <option value="">Selecciona</option>
+                    <option>Saludable</option>
+                    <option>En tratamiento</option>
+                    <option>Crítico</option>
+                    <option>Recuperación</option>
+                </select>
+                <small class="pista" id="pista-condicion"></small>
+
+                <label for="f-observaciones">Observaciones</label>
+                <textarea id="f-observaciones" rows="3" placeholder="Notas relevantes"></textarea>
+
+                <p class="acciones-form">
+                    <button class="boton" type="submit" id="boton-guardar">Guardar ficha</button>
+                    <button class="boton-secundario" type="button" id="boton-cancelar">Cancelar</button>
+                </p>
+                <p class="mensaje" id="mensaje-ficha" role="alert"></p>
+            </form>
+        </section>
+
+        <section class="lista-fichas" aria-labelledby="titulo-lista">
+            <header class="lista-cabecera">
+                <h3 id="titulo-lista">Fichas clínicas</h3>
+                <label class="filtro" for="buscador-fichas">Buscar ficha</label>
+                <input type="text" id="buscador-fichas" placeholder="Buscar ficha...">
+            </header>
+            <table>
+                <caption class="accesible">Fichas clínicas registradas</caption>
+                <thead>
+                    <tr>
+                        <th>Mascota</th>
+                        <th>Especie</th>
+                        <th>Dueño</th>
+                        <th>Raza</th>
+                        <th>Edad</th>
+                        <th>Peso</th>
+                        <th>Condición</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-fichas"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

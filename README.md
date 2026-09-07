@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##Proyecto Veterinaria San Marcos
 
 Trabajo semestral del curso DSY1104 – Desarrollo FullStack II.
@@ -21,3 +22,7 @@ Agendar-cita.html – formulario para solicitar una cita.
 duenoHome.html, duenoCatalogo.html, duenoInfo.html – vistas del dueño de mascota.
 adminHome.html, gestion_usuarios.html, gestion_Catalogo.html, gestion_reportes.html – panel de administrador.
 veterinaria-login.html, veterinaria-panel.html, veterinaria-citas.html, veterinaria-fichas.html, veterinaria-historial.html, veterinaria-reportes.html – panel del personal de la clínica.
+=======
+# Proyecto_Veterinaria
+Trabajo semestral de Fullstack 2 
+>>>>>>> 07b3f1f4b94fc0f5a3f566964ee03b2d3e6a4ef2

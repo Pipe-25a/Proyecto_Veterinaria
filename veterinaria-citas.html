@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas - Veterinaria</title>
+    <link rel="stylesheet" href="veterinaria-citas.css">
+    <script src="veterinaria-datos.js" defer></script>
+    <script src="veterinaria-citas.js" defer></script>
+</head>
+
+<body>
+    <aside class="barra-lateral" aria-label="Menú principal de veterinaria">
+        <header class="cabecera-lateral">
+            <img class="logo" src="Imagen_icon.jpg" alt="Logo de la Clínica Veterinaria">
+            <h1>Veterinaria</h1>
+        </header>
+        <nav class="menu-lateral" aria-label="Navegación del módulo">
+            <ul>
+                <li><a href="veterinaria-panel.html">Inicio</a></li>
+                <li><a class="activo" href="veterinaria-citas.html">Citas</a></li>
+                <li><a href="veterinaria-historial.html">Historial</a></li>
+                <li><a href="veterinaria-fichas.html">Fichas</a></li>
+                <li><a href="veterinaria-reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+        <footer class="pie-lateral">
+            <span id="usuario-nombre">Veterinario</span>
+            <button id="btn-cerrar" class="btn-cerrar">Cerrar sesión</button>
+        </footer>
+    </aside>
+
+    <main class="contenido">
+        <header class="cabecera-contenido">
+            <h2>Gestión de Citas</h2>
+            <p>Agenda, confirma y registra las atenciones de tus pacientes.</p>
+        </header>
+
+        <section class="formulario-cita" aria-labelledby="titulo-form">
+            <h3 id="titulo-form">Agendar nueva cita</h3>
+            <form id="form-cita" novalidate>
+                <label for="cs-nombre-dueno">Nombre del dueño</label>
+                <input type="text" id="cs-nombre-dueno" placeholder="Nombre completo" autocomplete="name">
+                <small class="pista" id="pista-dueno"></small>
+
+                <label for="cs-mascota">Nombre de la mascota</label>
+                <input type="text" id="cs-mascota" placeholder="Nombre de la mascota">
+                <small class="pista" id="pista-mascota"></small>
+
+                <label for="cs-especie">Especie</label>
+                <select id="cs-especie">
+                    <option value="">Selecciona una opción</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
+                    <option>Hamster</option>
+                    <option>Tortuga</option>
+                    <option>Pájaro</option>
+                    <option>Otro</option>
+                </select>
+                <small class="pista" id="pista-especie"></small>
+
+                <label for="cs-tipo">Tipo de atención</label>
+                <select id="cs-tipo">
+                    <option value="">Selecciona una opción</option>
+                    <option>Consulta</option>
+                    <option>Vacunación</option>
+                    <option>Desparasitación</option>
+                    <option>Cirugía</option>
+                    <option>Urgencia</option>
+                </select>
+                <small class="pista" id="pista-tipo"></small>
+
+                <label for="cs-fecha">Fecha deseada</label>
+                <input type="date" id="cs-fecha">
+                <small class="pista" id="pista-fecha"></small>
+
+                <label for="cs-hora">Hora deseada</label>
+                <input type="time" id="cs-hora">
+                <small class="pista" id="pista-hora"></small>
+
+                <label for="cs-motivo">Motivo (opcional)</label>
+                <textarea id="cs-motivo" rows="2" placeholder="Motivo de la consulta"></textarea>
+
+                <button class="boton" type="submit">Agendar cita</button>
+                <p class="mensaje" id="mensaje-cita" role="alert"></p>
+            </form>
+        </section>
+
+        <section class="lista-citas" aria-labelledby="titulo-lista">
+            <header class="cabecera-lista">
+                <h3 id="titulo-lista">Citas registradas</h3>
+                <label class="filtro" for="filtro-estado">Filtrar:
+                    <select id="filtro-estado">
+                        <option value="Todos">Todos</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="Confirmada">Confirmada</option>
+                        <option value="Atendida">Atendida</option>
+                        <option value="Cancelada">Cancelada</option>
+                    </select>
+                </label>
+            </header>
+            <table>
+                <caption class="accesible">Listado de citas registradas</caption>
+                <thead>
+                    <tr>
+                        <th>Dueño</th>
+                        <th>Mascota</th>
+                        <th>Especie</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-citas"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

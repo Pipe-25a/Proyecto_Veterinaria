@@ -1,0 +1,105 @@
+body{
+    background-color: #F1F4EF;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.Icono{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    padding: 1%;
+    align-self: center;
+    border-radius: 15px;
+}
+.Titulo{
+    margin: auto;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    color: #1d2422; 
+    background-color: #ffe46e;
+    border: 2px solid #1d2422;
+    border-radius: 15px;
+}
+.Subtitulo{
+    margin: auto;
+    width: 40%;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    color: #1d2422; 
+    background-color: #ffd254;
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+.Descripcion_Veterinaria{
+    width: auto;
+    height: auto;
+    border: 2px solid #000000;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius:15px;
+
+}
+nav{
+    border: 2px solid #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+}
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+}
+
+.enlaces-login{
+    padding: 5px;
+}
+.Seccion_Informacion{
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    
+    border-radius: 15px;
+}
+.Tabla_servicios{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(253, 237, 146);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.InformacionContacto{
+    background-color: #ffd727;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+    
+}
